@@ -91,6 +91,11 @@ Déjà fait le 19 novembre 2026 (étapes 1 et 2). Il reste à brancher Cloudflar
    **Build command** : `exit 0` · **Build output directory** : `public` → **Save and Deploy**.
 4. **Custom domains** → `mbmdesk.winnia.win` → **Activate domain**.
 
+Si Cloudflare propose plutôt un Worker (**Import a repository**), ça fonctionne aussi : `wrangler.jsonc` sert le
+dossier `public/` en fichiers statiques. Nom du Worker : `mbmdesk`; commande de déploiement par défaut
+(`npx wrangler deploy`), sans commande de build. Domaine : **Settings** → **Domains & Routes** → **Add** →
+**Custom domain** → `mbmdesk.winnia.win`. Un Worker « Hello World » qui garde déjà le domaine doit d’abord être supprimé.
+
 ## Mettre à jour
 
 1. Modifier les sources dans `app/` (`app/js/*.js`, `app/styles.css`, images dans `app/assets/`).

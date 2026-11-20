@@ -1,0 +1,11 @@
+// Déploiement Cloudflare en Worker à fichiers statiques (le chemin proposé par défaut par Cloudflare).
+// Le site est le dossier public/ tel que produit par tools/publish.mjs : page d'entrée et portail chiffré.
+// Un projet Cloudflare Pages ignore ce fichier (pas de pages_build_output_dir) et sert public/ comme avant.
+{
+  "name": "mbmdesk",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
