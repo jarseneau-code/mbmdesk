@@ -1,0 +1,11 @@
+{
+  "domain": "mbmdesk.winnia.win",
+  "kdf": "PBKDF2-SHA256",
+  "it": 600000,
+  "s": "lKdVrcyabe1LM/kV5sidQQ==",
+  "check": {
+    "iv": "nb8gRWs67vnEwO9X",
+    "ct": "WzC8Kgxq5GEh+KxCypm4wb6++HpNLmRz50E="
+  },
+  "published": "2026-11-20T02:55:09.075Z"
+}
